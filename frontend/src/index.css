@@ -1,0 +1,188 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
+
+/* layout */
+:root {
+  --primary: #1aac83;
+  --error: #e7195a;
+}
+body {
+  background: #f1f1f1;
+  margin: 0;
+  font-family: "Poppins";
+  box-sizing: border-box;
+}
+header {
+  background: #fff;
+}
+/* Default styles for larger screens */
+.header {
+  width: 100%;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Media Queries */
+
+/* Small screens (up to 768px) */
+@media (max-width: 767px) {
+  .header {
+    padding: 10px;
+  }
+
+  header .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pages {
+    padding: 10px;
+  }
+
+  input {
+    width: 100%;
+  }
+}
+
+/* Medium screens (768px to 1023px) */
+@media (min-width: 768px) and (max-width: 1023px) {
+  header .container {
+    padding: 10px;
+  }
+
+  .pages {
+    padding: 15px;
+  }
+}
+
+header .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header a {
+  color: #c3c1c1;
+  text-decoration: none;
+}
+
+.pages {
+  max-width: 1400px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* new workout form */
+label,
+input {
+  display: block;
+}
+input {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+form button {
+  background: var(--primary);
+  border: 0;
+  color: #fff;
+  padding: 10px;
+  font-family: "Poppins";
+  border-radius: 4px;
+  cursor: pointer;
+}
+div.error {
+  padding: 10px;
+  background: #ffefef;
+  border: 1px solid var(--error);
+  color: var(--error);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+input.error {
+  border: 1px solid var(--error);
+}
+
+
+
+/* homepage */
+.home {
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+  height: 100vh; /* Set height to 100% of viewport height */
+  display: flex; /* Use flexbox to align items */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  background-image: url('imgs/background.jpg'); /* Set the background image */
+  background-size: cover; /* Cover the entire container with the background image */
+  background-position: center; /* Center the background image */
+}
+
+.home .summary-section {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: auto; /* Push summary section to the bottom */
+  background-color: rgba(82, 81, 81, 0.8); /* Add semi-transparent background */
+}
+
+.home .summary-container {
+  display: flex; /* Use flexbox layout for the summary */
+  justify-content: center; /* Center the summary horizontally */
+}
+
+.home .summary-box,
+.home .contact-links {
+  width: 50%; /* Set the width of each box to 50% */
+  padding: 20px; /* Add padding to each box */
+}
+
+.home .summary-box {
+  background-color: #444343; /* Set background color for the summary box */
+}
+
+.home .contact-links {
+  background-color: #625f5f; /* Set background color for the contact links box */
+}
+
+.home .contact-links h2,
+.home .summary-box h2 {
+  margin-bottom: 10px; /* Add some space below the heading */
+}
+
+.home .contact-links ul {
+  list-style-type: none; /* Remove bullet points from the list */
+  padding: 0; /* Remove default padding */
+}
+
+.home .contact-links ul li {
+  margin-bottom: 5px; /* Add some space between list items */
+}
+
+.home .contact-links ul li a {
+  color: #333; /* Set link color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.home .contact-links ul li a:hover {
+  text-decoration: underline; /* Underline links on hover */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .home .summary-container {
+    flex-direction: column;
+  }
+
+  .home .summary-box,
+  .home .contact-links {
+    width: 100%;
+  }
+}

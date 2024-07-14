@@ -1,0 +1,124 @@
+.navbar {
+  background-color: #333; /* Set the background color of the navbar */
+  color: white; /* Set the text color of the navbar */
+  padding: 1rem; /* Add padding to the navbar */
+  text-align: center; /* Center align the text within the navbar */
+  width: 100%; /* Make the navbar full width */
+  position: fixed; /* Fix the navbar position */
+  top: 0; /* Stick the navbar to the top of the page */
+  z-index: 1000; /* Set a high z-index to ensure the navbar is above other content */
+}
+
+/* Home.css */
+.home{
+  background-image: url('../imgs/background.jpg'); /* Set the background image */
+  background-size: cover; /* Cover the entire container with the background image */
+  background-position: center; /* Center the background image */
+
+  .summary-section {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  
+  .summary-container {
+    display: flex; /* Use flexbox layout for the summary */
+    justify-content: center; /* Center the summary horizontally */
+    flex-direction: row;
+  }
+    
+    .summary-box,
+  .contact-links {
+    width: 50%; /* Set the width of each box to 50% */
+    padding: 20px; /* Add padding to each box */
+  }
+
+  .summary-box {
+    background-color: #f0f0f0; /* Set background color for the summary box */
+  }
+
+  .contact-links {
+    background-color: #e0e0e0; /* Set background color for the contact links box */
+  }
+
+  .contact-links h2,
+  .summary-box h2 {
+    margin-bottom: 10px; /* Add some space below the heading */
+  }
+
+  .contact-links ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove default padding */
+  }
+
+  .contact-links ul li {
+    margin-bottom: 5px; /* Add some space between list items */
+  }
+
+  .contact-links ul li a {
+    color: #333; /* Set link color */
+    text-decoration: none; /* Remove underline from links */
+  }
+
+  .contact-links ul li a:hover {
+    text-decoration: underline; /* Underline links on hover */
+  }
+  
+}
+
+li {
+  flex-direction: row;
+}
+
+.workout-details {
+  width: 30%;
+  flex-direction: row;
+  background-color: #ffffff; /* Set background color for the workout details box */
+  border: 1px solid #ccc; /* Add a border around the box */
+  border-radius: 5px; /* Add border radius for rounded corners */
+  padding: 20px; /* Add padding to the box */
+  margin-bottom: 20px; /* Add margin at the bottom of each box */
+}
+
+.workout-details h4 {
+  margin-top: 0; /* Remove default margin from the heading */
+}
+
+.workout-details p {
+  margin: 10px 0; /* Add some margin to paragraphs */
+}
+
+.workout-details button {
+  background-color: #007bff; /* Set background color for the button */
+  color: #fff; /* Set text color for the button */
+  border: none; /* Remove border from the button */
+  padding: 10px 20px; /* Add padding to the button */
+  cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.workout-details button:hover {
+  background-color: #0056b3; /* Darken button color on hover */
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .summary-container {
+    flex-direction: column;
+  }
+
+  .workout-details {
+    flex-direction: row;
+  }
+
+  .summary-box,
+  .contact-links {
+    width: 100%;
+  }
+}
+.dummy {
+  position: relative;
+  height: 100px;
+}
